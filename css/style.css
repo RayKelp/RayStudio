@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Galada&family=Herr+Von+Muellerhoff&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
-@import url("/fonts/OpenDyslexic-Regular.ttf");
-@import url("../fonts/OpenDyslexic-Bold.ttf");
 @import url('https://fonts.googleapis.com/css2?family=Galada&family=Herr+Von+Muellerhoff&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
 
 
@@ -13,7 +11,7 @@
 
 *
 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     box-sizing: border-box;
     width: auto;
     margin: 0px;
@@ -361,9 +359,10 @@ nav
     display: flex;
     flex-direction: column;
     width: auto;
-    height: 185vh;
+    height: 180%;
     padding-top: 63px;
     margin-left: 0px;
+    padding-bottom: 120 px;
     background-color: rgb(212, 0, 0);
     background-image: url("../assets/fade_bg.png");
     background-size: cover;
@@ -383,6 +382,7 @@ nav
     justify-content: center;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
+    padding: 50px 0px;
 
     /* debugging */
     border-style:dotted;
@@ -738,6 +738,8 @@ nav
         width: 65%;
         height: auto;
         object-fit: cover;
+        padding: 0px;
+        margin: 0px;
     }
     .description
     {
@@ -786,8 +788,9 @@ nav
 {
      .products
     {
-        height: 213vh;
+        height: 100%;
         padding-top: 24px;
+        padding-bottom: 280px;
     }
 
     /* Repositioning the offer_box elements */
@@ -912,9 +915,20 @@ nav
         justify-content: center;
     }
 
-    
+      /* .products
+    {
+        padding-bottom: 280px;
+    } */
+
+   
 
     /* video fits the screen horizontally */
+    .products_title
+    {
+        font-size: 30px;
+        text-align: center;
+    }
+
     .video
     {
         width: 95%;
@@ -931,7 +945,7 @@ nav
         padding-bottom: 20px;
     }
 
-    /* available title + unity button */
+    /* available title + unity button  */
     .available_section
     {
         display: flex;
@@ -1018,6 +1032,13 @@ nav
         font-weight: 400;
     }
 
+      .products
+    {
+        padding-bottom: 180px;
+    }
+
+
+
     .boxes
     {
         width: 95%;
@@ -1033,12 +1054,12 @@ nav
     /* available title + unity button */
     .available_section
     {
-        margin-top: -360px;
+        margin-top: -29%;
         gap: 6px;
     }
-    .available_section h3
+    /* .available_section h3
     {
-        font-size: 18px;
+       font-size: 18px;
     }
     .separator
     {
@@ -1050,7 +1071,46 @@ nav
         height: 18%;
         width: auto;
     }
-
+ */
 
 }
+
+@media only screen and (max-width: 500px)
+{
+    .icons
+    {
+        font-size: 24px;
+    }
+    .list-item a
+    {
+        font-size: 88%;
+    }
+    .contact-title
+    {
+        font-size: 27px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 439px)
+{
+    .icons
+    {
+        font-size: 20px;
+    }
+    .list-item a
+    {
+        font-size: 80%;
+    }
+    .contact-title
+    {
+        font-size: 27px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+}
+
 /*fazer sumir, e aparecer um botao cujo hover faz aparecer a lista só que dropdown*/

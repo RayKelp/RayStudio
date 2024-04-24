@@ -217,7 +217,9 @@ nav
     background-image: url("../assets/bg3.png");
     background-color: #39000f;
     background-size: cover;
+    background-size: 100% cover;
     background-repeat: no-repeat;
+    background-position: center;
     /* background-position:center; */
     top: 0;
     left: 0;
@@ -249,8 +251,8 @@ nav
     transition: all 0.3s;
 
     /* debugging */
-    border-style: dashed;
-    border-color: rgb(127, 255, 212);
+    /* border-style: dashed; */
+    /* border-color: rgb(127, 255, 212); */
 
 }
 .text1:hover

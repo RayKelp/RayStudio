@@ -1083,6 +1083,7 @@ nav
     }
     .list-item a
     {
+        color: red;
         font-size: 88%;
     }
     .contact-title

@@ -95,7 +95,7 @@ nav
 {
     position: absolute;
     cursor:pointer;
-    width: 47px;
+    width: 81px;
     max-width: 100%;
     max-height: auto;
     left: 60px;
@@ -103,6 +103,9 @@ nav
     background-color: transparent;
     text-align: center;
     align-items: center;
+    transform-origin: center;
+    transition: all 0.3s;
+    opacity: 75%;
 
     /* debugging */
     border-style: dashed;
@@ -111,8 +114,8 @@ nav
 }
 .logo:hover
 {
-    width: 54px;
-    transition: all 0.2s
+    width: 86px;
+    opacity: 100%;
 }
 
 
@@ -135,6 +138,7 @@ nav
 .nav_links a
 {
     color: #fff3f3;
+    opacity: 75%;
     text-decoration: none;
     background-color: transparent;
     font-weight:500;
@@ -154,8 +158,9 @@ nav
 }
 .nav_links a:hover
 {
-    background-color: hsla(0, 0%, 100%, 0.20);
+    background-color: hsla(0, 0%, 100%, 0.144);
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.211);
+    opacity: 100%;
 }
 
 
@@ -240,11 +245,17 @@ nav
     left: 90px;
     width: 47%;
     color: rgb(255, 235, 235);
+    opacity: 75%;
+    transition: all 0.3s;
 
     /* debugging */
     /* border-style: dashed; */
     /* border-color: rgb(127, 255, 212); */
 
+}
+.text1:hover
+{
+    opacity: 100%;
 }
 .text1 h1
 {
@@ -334,7 +345,7 @@ nav
 {
     /* font-size: 50px; */
     /* height: 38px; */
-    padding-top: 38px;
+    padding-top: 30px;
 }
 .blink
 {

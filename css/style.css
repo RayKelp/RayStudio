@@ -235,11 +235,12 @@ nav
     position: absolute;
     text-align: start;
     left: 90px;
+    width: 60%;
     color: rgb(255, 235, 235);
 
     /* debugging */
     border-style: dashed;
-    border-color: rgba(127, 255, 212, 0);
+    border-color: rgb(127, 255, 212);
 
 }
 .text1 h1
@@ -330,7 +331,7 @@ nav
 {
     /* font-size: 50px; */
     /* height: 38px; */
-    padding-top: 50px;
+    padding-top: 38px;
 }
 .blink
 {
@@ -363,7 +364,7 @@ nav
     padding-top: 63px;
     margin-left: 0px;
     padding-bottom: 120 px;
-    background-color: rgb(212, 0, 0);
+    background-color: rgb(134, 0, 0);
     background-image: url("../assets/fade_bg.png");
     background-size: cover;
     overflow: hidden;
@@ -896,6 +897,7 @@ nav
     .text1
     {
         margin-left: 40px;
+        width: 80%;
     }
 
    .logo
@@ -1111,6 +1113,11 @@ nav
         padding: 0px;
         margin: 0px;
     }
+    .text1
+    {
+        width: 90%;
+    }
+
 
 }
 

@@ -561,11 +561,11 @@ nav
     position: relative;
     width: 200px;
     transition-duration: 0.3s;
+    z-index: 5;
 }
 .unity_button:hover
 {
-    box-shadow: 1px 4px 29px rgba(0, 0, 0, 0.322);
-    width: 203px;
+    width: 207px;
 }
 
 

@@ -1,58 +1,182 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site de Teste</title>
-    <style>
-        body
-        {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000000;
-        }
-        .container 
-        {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .Teste
-        {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: rgb(255, 255, 255)c1c;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 
-        {
-            color: #333;
-            text-align: center;
-        }
-        p
-        {
-            color: #666;
-            line-height: 1.6;
-        }
-    </style>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <!--<link rel="icon" href="images/favicon.png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Test</title>
+
+  <!-- font awesome style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="css/style.css" rel="stylesheet" />
+
 </head>
+
 <body>
-    <div class="container">
-        <h1>Bem-vindo ao Meu Site de Teste!</h1>
-        <p>Este é apenas um exemplo de página HTML simples para testar seu site no GitHub Pages.</p>
-        <p>Adicione mais conteúdo, personalize o estilo e divirta-se explorando as possibilidades!</p>
+
+  <!-- navbar -->
+  <header>
+    <img class = "logo" src="assets/R2.png" alt="logo">
+    <div class="div_spc1"></div>
+      <nav class="nav_links">
+        <ul class="nav_bar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <ul class="nav_btn">
+            <li><a href="#">Menu</a></li>
+          <ul class="btn_dropdown">
+            <li class="home_btn"><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </ul>
+      </nav>
+    <div class="div_spc"></div>
+  </header>
+  <!-- END navbar -->
+
+  <!-- main content -->
+  <main>
+
+    <!-- page 1 -->
+    <div class="home" id="home">
+
+        <div class="text1">
+          <h1>Rayan Araujo</h1>
+          <h3>Gamedev, programmer and Asset<h3>
+          <h3>Store publisher</h3>
+        </div>
+
+        <div class="products_indicator_home" href="#products">
+          <a class="products_link" href="#products">
+            <h4 class="products_indicator_text blink">check my products and projects </h4>
+            <i class="fa-solid fa-angles-down double_arrow blink"></i>
+          </a>
+        </div>
+
+
+    </div>
+    <!-- END page 1 -->
+
+    <!-- page 2 -->
+    <div class="products" id="products"> 
+      <div class="products_indicator">
+        <h4 class="products_title">Products and projects</h4>
+      </div>
+
+      <!-- video section -->
+      <div class="vid_container">
+
+        <h2 class="custombars_title_b">
+          Ray's Custom Bars
+        </h2>
+
+        <video class="video"width="675" height="380" controls preload="auto">
+          <source src="assets/custombars_demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="description">
+
+          <h3 class="custombars_title_a">
+            Ray's Custom Bars
+          </h3>
+
+          <p class="text_desc">
+            CustomBars is a flexible asset pack to effortlessly design and customize diverse UI bars, including health, energy, and progress bars. With a wide array of prefabs and customization options, it provides the versatility needed to suit various game styles and enhance player experience.
+          </p>
+        </div>
+
+      </div>
+      <!-- END video section -->
+
+      <!-- box images section -->
+      <div class="offer_box">
+        <div class="available_section"> 
+          <h3>AVAILABLE NOW</h3>
+          <img class="separator"src="assets/awesome_detail.png">
+
+          <a href="https://www.google.com" target="_blank">
+            <img class="unity_button" src="assets/unity_button.png">
+          </a>
+        </div>
+        <img class = "boxes" src="assets/boxes.png" alt="logo">
+      </div>
+      <!-- END page 2 -->
+     
+
     </div>
 
-    <div class="Teste">
-        <h1> sakdjasldkj </h1>
-        <p>d</p>
-    </div>
 
+
+    <!-- page 3 -->
+    <div class="contact" id="contact">
+
+      <div class="contact_container">
+        <h1 class="contact-title"><div class="contact-titles">CONTACT</div></h1>
+        <!-- <h4> <a href="mailto:wingsneon@gmail.com"> example@email.com</a></h4> -->
+        <!-- <i class="fa-brands fa-x-twitter"></i> -->
+      <div class="direct-contact-container">
+
+        <ul class="contact-list">
+          <!-- <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li> -->
+          
+          <!-- <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:#" title="Give me a call">phon numba</a></span></i></li> -->
+          
+          <li class="list-item">
+            <i class="icons fa-regular fa-envelope">
+              <span class="contact-text gmail">
+                <a href="mailto:#" target="_blank" title="Send me an email">
+                  hitmeup@gmail.com</a>
+                </span>
+              </i>
+            </li>
+          <li class="list-item">
+            <i class="icons fa-brands fa-x-twitter">
+              <span class="contact-text X">
+                <a href="https://twitter.com/Rayan_Arauj" target="_blank" title="Checkout my X!">
+                  @Rayan_Arauj</a>
+                </span>
+              </i>
+            </li>
+          <li class="list-item">
+            <i class="icons fa-brands fa-github">
+              <span class="contact-text X">
+                <a href="https://github.com/RayKelp" target="_blank" title="Checkout my X!">
+                  /Rayan_Arauj</a>
+                </span>
+              </i>
+            </li>
+           <li class="list-item">
+            <i class="icons fa-regular fa-comments">
+              <span class="contact-text gmail">
+                <a href="mailto:#" target="_blank" title="Send me an email">
+                  support@name.com
+                </a>
+              </span>
+            </i>
+          </li>
+        </ul>
+   </div>
+    <!-- END page 3 -->
+
+
+
+
+    <!-- workaround to avoid scroll being reset -->
+    <div style="height: 9999px;"></div>
+
+  </main>
 </body>
-</html>

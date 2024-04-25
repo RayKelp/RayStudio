@@ -108,8 +108,8 @@ nav
     opacity: 75%;
 
     /* debugging */
-    border-style: dashed;
-    border-color: #7fffd400;
+    /* border-style: dashed; */
+    /* border-color: #7fffd400; */
 
 }
 .logo:hover
@@ -234,8 +234,8 @@ nav
     justify-content: center; /* center horizontally */
 
     /* debugging */
-    border-style: dashed;
-    border-color: rgba(127, 255, 212, 0);
+    /* border-style: dashed; */
+    /* border-color: rgba(127, 255, 212, 0); */
 }
 
 
@@ -297,8 +297,8 @@ nav
     display: flex;
     flex-direction: column;
     /* debugging */
-    border-style:dotted;
-    border-color: rgba(255, 0, 0, 0);
+    /* border-style:dotted; */
+    /* border-color: rgba(255, 0, 0, 0); */
 }
 
 .products_indicator_home
@@ -330,8 +330,8 @@ nav
     text-decoration: none;
 
     /* debugging */
-    border-style:dotted;
-    border-color: rgba(255, 0, 0, 255);
+    /* border-style:dotted; */
+    /* border-color: rgba(255, 0, 0, 255); */
 
 }
 .double_arrow
@@ -386,8 +386,8 @@ nav
     overflow: hidden;
 
     /* debugging */
-    border-style:dotted;
-    border-color: rgba(0, 255, 170, 0);
+    /* border-style:dotted; */
+    /* border-color: rgba(0, 255, 170, 0); */
 }
 
 .products_title
@@ -402,8 +402,8 @@ nav
     padding: 50px 0px;
 
     /* debugging */
-    border-style:dotted;
-    border-color: rgba(0, 255, 170, 0);
+    /* border-style:dotted; */
+    /* border-color: rgba(0, 255, 170, 0); */
 
 }
 
@@ -435,8 +435,8 @@ nav
 
     box-shadow: 1px 1px 37px rgba(0, 0, 0, 0.411);
    /* debugging */
-    border-style:dotted;
-    border-color: rgba(251, 255, 0, 0);
+    /* border-style:dotted; */
+    /* border-color: rgba(251, 255, 0, 0); */
   
 }
 
@@ -468,8 +468,8 @@ nav
     letter-spacing: 0.5px;
     
     /* debugging */
-    border-style:dotted;
-    border-color: rgba(0, 255, 170, 0);
+    /* border-style:dotted; */
+    /* border-color: rgba(0, 255, 170, 0); */
     z-index: 5;
 }
 .text_desc
@@ -486,8 +486,8 @@ nav
     text-align: start;
 
     /* debugging */
-    border-style:dotted;
-    border-color: rgba(0, 255, 170, 0);
+    /* border-style:dotted; */
+    /* border-color: rgba(0, 255, 170, 0); */
     z-index: 5;
 }
 .custombars_title_b
@@ -507,8 +507,8 @@ nav
 
 
     /* debugging */
-    border-style: dashed;
-    border-color: rgba(255, 0, 0, 0);
+    /* border-style: dashed; */
+    /* border-color: rgba(255, 0, 0, 0); */
 }
 
 .boxes
@@ -519,8 +519,8 @@ nav
     height: 148%;
 
     /* debugging */
-    border-style: dashed;
-    border-color: rgba(0, 255, 170, 0);
+    /* border-style: dashed; */
+    /* border-color: rgba(0, 255, 170, 0); */
     z-index: 5;
 }
 
@@ -536,8 +536,8 @@ nav
     /* left: 7%; */
 
     /* debugging */
-    border-style: dashed;
-    border-color: rgba(127, 255, 212, 0);
+    /* border-style: dashed; */
+    /* border-color: rgba(127, 255, 212, 0); */
 }
 
 
@@ -1200,8 +1200,8 @@ nav
         text-align: center;
 
         /* debugging */
-        border-style:dotted;
-        border-color: rgba(255, 0, 0, 255);
+        /* border-style:dotted; */
+        /* border-color: rgba(255, 0, 0, 255); */
 
     }
     .double_arrow

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CustomBars - Documentation</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">  
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+      
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
+
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <img class="docs-logo" src="assets/images/docs-logo.png">
+                            <span class="text-highlight">User</span>
+                            <span class="text-bold">Docs</span>
+                        </a>
+                    </h1>
+                    
+                </div><!--//branding-->
+                
+                <ol class="breadcrumb">
+                </ol>
+                
+               
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"> User manual</h1>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: 28, April 2024</div>
+                </div><!--//doc-header-->
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            
+
+
+
+
+                            <!-- OVERVIEW -->
+                            <section id="overview-section" class="doc-section">
+                                <h2 class="section-title">Overview</h2>
+                                <div class="section-block">
+                                    <p>CustomBars is a collection of customizable stats bars that includes seven unique variations for integration into your Unity project. Designed to streamline the process of implementing UI elements such as health bars, mana bars, and more, this package provides a convenient solution with 20 pre-built prefabs.<br>
+                                    Each variation comes with a range of customizable elements, including colors, sprites, texts, and icons, allowing you to tailor the UI to your specific needs. </p>
+                                    <p>CustomBars simplifies your game development process and enhance your user interface.</p>
+                                </div>
+                            </section><!--//doc-section-->
+                            
+
+
+
+                            <!-- PACKAGE CONTENT -->
+                            <section id="Package-content-section" class="doc-section">
+                                <h2 class="section-title">Package contents</h2>
+                                <div id="step1"  class="section-block">
+                                    
+                                   
+                                    <img class="image package-content" src="assets/images/package-contents.png" alt="package-contents">
+                                    <br></br>
+                                    <p>The package contents are organized within the folder <b>Rays/CustomBars/</b></p>
+                                    <ul>
+                                      <li><b>Documentation</b> - contains the documentation.</li>
+                                      <li><b>Prefabs</b> - Includes all 20 variations of CustomBars prefabs.</li>
+                                      <li><b>Scripts</b> - Houses the scripts utilized in the project, including a "Demo" folder containing scripts utilized in the demo scene controls.</li>
+                                      <li><b>Sprites</b> - Holds all the images used in the CustomBars, organized into respective folders.</li>
+                                    </ul>
+                                    <p>A demo scene within CustomBars folder showcases the variations along with interactive controls for manipulating the bars.</p>
+                                    <!--//code-block-->
+                                </div><!--//section-block-->
+                           
+                            
+
+                                <!-- INSTALLATION -->
+                            <section id="installation-section" class="doc-section">
+                                <h2 class="section-title">Installation</h2>
+                                <div class="section-block">
+
+                                    <img class="image package-content" src="assets/images/installation.png" alt="installation">
+                                    <br></br>
+                                    <p><b>The easiest way to import an asset from Asset Store is by using Unity's Package Manager window:</b></p>
+                                        <div class="col-md-6 col-12">
+                                            <ol class="list">
+                                              <li><b>Open the "Window" menu on Unity menu bar at the top.</b></li>
+                                              <li><b>Click on Package Manager.</b></li>
+                                              <li><b>Open "Packages:" dropdown menu.</b></li>
+                                              <li><b>Select "My Assets".</b></li>
+                                              <ul>
+                                                  <li>Search CustomBars Package through the list.</li>
+                                                  <li>You can search for packages by name or version number.</li>
+                                              </ul>
+                                              <li><b>Download the selected package.</b></li>
+                                              <ul>
+                                                <li>The Download button must be available in the details view at the left side of the Package Manager window, if the asset hasn't been downloaded yet.</li>
+                                                <li>A progress bar must appear at the bottom left side of the window, indication the download status.</li>
+                                              </ul>
+                                              <li><b>Import the selected package</b></li>
+                                              <ul>
+                                                <li>Once the download is complete, an "Import" button must appear next to the Download button.</li>
+                                                <li>Click the "Import" button to import the selected package.</li>
+                                              </ul>
+                                              <li><b>Adjust the import settings</b></li>
+                                              <ul>
+                                                <li>A Import Package window will appear, displaying the items to be imported.</li>
+                                                <li>(optional) Review the items selected for import and select the items you want - I recommend to import all.</li>
+                                              </ul>
+                                              <li><b>Access the imported contents</b></li>
+                                              <ul><li>The contents should be available inside of the "Asset" folder at the root of your project.</li></ul>
+                                           </ol>
+                                           <p>After completing these steps, you should be able to utilize the CustomBars asset - or any other asset you may adquire later - in your project.</p>
+                                           <p>Note: you can also import packages manually, check on <a href="https://docs.unity3d.com/Manual/upm-ui-import.html#:~:text=Importing%20a%20complete%20project%20from%20the%20Asset%20Store,-A%20complete%20project&text=Choose%20Import%20if%20you're,to%20import%20and%20click%20Next." target="_blank">Unity docs</a> for more information</p>
+                                        </div>
+                                </div><!--//section-block-->
+                            
+
+
+                                <!-- REQUIREMENTS -->
+                                <!-- WORKFLOWS -->
+                            <section id="requirements-section" class="doc-section">
+                                <h2 class="section-title">Requirements</h2>
+                                <div class="section-block">
+                                    <p>
+                                        To utilize CustomBars asset effectively, ensure that you meet the following basic requirements:
+                                        <ul>
+                                            <li><b>Unity Installation</b> - Unity Engine must be installed on your system. It is recomended to use the version <b>2022.3.13</b> or above, since it's the version that the asset was developed. Previous versions might work aswell, but CustomBars has not yet been tested in them yet. </li>
+                                            <li><b>Gameobject with Script</b> - To make usage of CustomBars, you'll need to have a project and a scene within it, and at least one gameobject and a C# script attached to it for interacting with the bars prefabs. Check the <a href="#workflow-section">Workflows section</a> for more information on how to incorporate custombars in your project.</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                           </section><!--//doc-section-->
+                            
+
+
+                           <!-- WORKFLOWS -->
+                            <section id="workflows-section" class="doc-section">
+                                <h2 class="section-title">Workflows</h2>
+                                <div class="section-block">
+                                    <p>
+                                        There are two main ways of incorporating CustomBars into your project: by <a href="#direct-reference">directly referencing</a> the bar into your script, or by setting an <a href="#action-event">action event</a>.
+                                    </p>
+                                    
+                                    <!-- DIRECT REFERENCING EXAMPLE -->
+                                    <div id="reference-example"class="code-block">
+                                      <h6>Referencing custombar example:</h6>
+                                      <pre><code class="language-csharp">
+using UnityEngine;
+using CustomBars; // Don&#x27;t forget to add this namespace
+                  // or you won&#x27;t be able to reference the CustomBars classes.
+                  // Or instead, you can reference the namespace before the class on each line you need
+                  // (Ex: &#x22;public CustomBars.CustomBar_A&#x22; or &#x22;GetComponent&#x3C;CustomBars.CustomBar_A&#x22;)   
+
+public class Implementation_Test : MonoBehaviour
+{
+    // Public reference
+    public CustomBar_E customBar_E;
+
+    
+    float maxHealth = 200;
+    float currentHealth;
+
+    float maxMana = 100;
+    float currentMana;
+    
+
+    void Start()
+    {
+        // Primary Bar
+        currentHealth = maxHealth;
+
+        customBar_E.SetMaxValue(maxHealth);
+        customBar_E.SetCurrentValue(currentHealth);
+
+        // Secondary Bar
+        currentMana = maxMana;
+
+        customBar_E.SetMaxValue2(maxMana);
+        customBar_E.SetCurrentValue2(currentMana);
+    }
+
+    // Get damage and subtract the currentHealth
+    void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
+        customBar_E.SetCurrentValue(currentHealth);
+    }
+
+    // subtract mana points
+    void SpendMana(float value)
+    {
+        currentMana -= value;
+        customBar_E.SetCurrentValue2(currentMana);
+    }
+}
+                                    </code></pre></div>
+                                     
+                                    <!-- ACTION EVENT EXAMPLE -->
+                                     <div id="action-event-example" class="code-block">
+                                      <h6>Action Events example:</h6>
+                                    
+                                      <pre><code class="language-csharp">
+using UnityEngine;
+using System;    // Necessary for using action events
+using CustomBars; // Don&#x27;t forget to add this namespace
+                  // or you won&#x27;t be able to reference the CustomBars classes.
+                  // Or instead, you can reference the namespace before the class on each line you need
+                  // (Ex: &#x22;public CustomBars.CustomBar_A&#x22; or &#x22;GetComponent&#x3C;CustomBars.CustomBar_A&#x22;)   
+
+
+public class Implementation_Test2 : MonoBehaviour
+{
+ // Action Events are able to send data like ints, floats, strings, bools
+ public event Action&#x3C;float&#x3E; OnSetMaxHP;
+ public event Action&#x3C;float&#x3E; OnSetCurrentHP;
+
+ public event Action&#x3C;float&#x3E; OnSetMaxMana;
+ public event Action&#x3C;float&#x3E; OnSetCurrentMana;
+
+
+ // Using &#x22;public static event Action&#x22; eliminates the need for references,
+ // but may result in unintended consequences when multiple agents affect the same bar.
+ // In such cases, it&#x27;s preferable to use explicit references to maintain control over each agent&#x27;s interaction.
+ public CustomBar_E customBar_E;
+
+ float maxHealth = 200;
+ float currentHealth;
+
+ float maxMana = 100;
+ float currentMana;
+ 
+
+ void Start()
+ {
+     // Primary Bar
+     currentHealth = maxHealth;
+
+     OnSetMaxHP?.Invoke(maxHealth); // The &#x22;?.&#x22; only triggers the event if it&#x27;s being listened somewhere
+     OnSetCurrentHP?.Invoke(currentHealth);
+
+     // Secondary Bar
+     currentMana = maxMana;
+
+     OnSetMaxMana?.Invoke(maxMana);
+     OnSetCurrentMana?.Invoke(currentMana);
+ }
+
+ // Get damage and subtract the currentHealth
+ void TakeDamage(float damage)
+ {
+     currentHealth -= damage;
+     customBar_E.SetCurrentValue(currentHealth);
+ }
+
+ // subtract mana points
+ void SpendMana(float value)
+ {
+     currentMana -= value;
+     customBar_E.SetCurrentValue2(currentMana);
+ }
+ 
+}
+                                    </code></pre></div>
+
+
+                                    <H5 id="secondary-step">Secondary Step</H5>
+                                    <p> After creating the Action Events, a final step need to be done in order for it to work:<br>
+                                      <ol>
+
+                                          <i>The Custombar script still doesn't knows that there's a script containing an Action Events, so we need to create a reference inside of the Custombar script that points to this Action Event's Script.</i><br>
+                                        <li>
+                                          <b>Open the script of the chosen bar </b> - If you're trying to set an Action Event to update CustomBar_E, then edit the CustomBar_E script.
+                                        </li><br>
+
+
+                                          <i>The Custombar script needs to know what to do when each of the Action Events gets triggered.</i><br>
+                                        <li>
+                                          <b>Reference the Action Event script</b> -  inside of the chosen CustomBar script, add a reference of the script containing the Action Event you've setted up.
+                                        </li><br>
+                                          <i>We want each of the Action Events to trigger a function. In case the Action Events is carrying an argument, the function must also support an argument of the same type (Ex: if the event in the Action Event Script is sending a float, then inside of the Custombar Script we need to subscribe it to a function that also receives a float as argument).</i><br>
+                                        <li>
+                                          <b>Subscribe the Action Event to a Function</b> - Choose a function within the script and subscribe the already done reference's Action Event to it (see example below)<br>
+                                        </li>
+                                      </ol>
+                                    </p>
+                                     <div class="code-block">
+                                      <h6>Referencing and subscribing the Action Events to functions:</h6>
+                                    
+                                      <pre><code class="language-csharp">
+   public class CustomBar_E : MonoBehaviour
+   {...
+       ////////////////////////////////
+       //// MonoBehavior functions ////
+       ////////////////////////////////
+       
+       public Implementation_Example2 implementation_Example2; // Script containing the action events
+
+       void OnEnable() // Subscribing to events
+       {
+           if (implementation_Example2 != null)
+           {
+               implementation_Example2.OnSetMaxHP += SetMaxValue;
+               implementation_Example2.OnSetCurrentHP += SetCurrentValue;
+
+               implementation_Example2.OnSetMaxMana += SetMaxValue2;
+               implementation_Example2.OnSetCurrentMana += SetCurrentValue;
+           }
+       }
+       void OnDisable() // Unsubscribe to avoid unwanted behaviors
+       {
+           if (implementation_Example2 != null)
+           {
+               implementation_Example2.OnSetMaxHP -= SetMaxValue;
+               implementation_Example2.OnSetCurrentHP -= SetCurrentValue;
+
+               implementation_Example2.OnSetMaxMana -= SetMaxValue2;
+               implementation_Example2.OnSetCurrentMana -= SetCurrentValue;
+           }
+       }
+   ...
+   }
+
+                                      </code></pre></div>
+                                      <p>That being done, the Action event <code>OnSetMaxHP</code> should now update the <code>SetMaxValue</code> function, that will update the max value of the first bar of the chosen Custombar. The same applies to the other events and their respective functions.</p>
+
+                                  
+
+                            </section><!--//doc-section-->
+                            
+
+
+
+                            <section id="advanced-section" class="doc-section">
+                                <h2 class="section-title">Advanced</h2>
+                                <div class="section-block">
+                                    <h6>Custombar scripts funcionality</h6>
+                                    <p>The code of each script of Custombar is organized into four main sections of functions, for ease of understanding. Each of the 7 variations might have their own differences like extra functions and variables, but they still follow the same structure:</p>
+                                    <ol>
+
+                                        <br><li><b>MonoBehaviour Functions - controls the behaviour and interactions of the Custombar with the engine.</b> </li>
+                                        <ul>
+                                            <li><b><code>OnEnable()</code> | <code>OnDisable()</code></b> - for subscribing and unsubscribing to events.</li>
+                                            <li><b><code>OnValidate()</code></b> - allow changes and updates to be seen on editor without starting the game. You can disable it in case errors and warnings are showing up in the console while in editor mode.</li>
+                                            <li><b><code>Start()</code> | <code>Update()</code></b> - Used for basic functioning of the Custombars.</li>
+                                        </ul>
+
+                                        <br><li><b>Bar Updating Functions - updates the bar's stats and filling percentages.</b></li>
+                                        <ul>
+                                            <li id="refreshbar-function"><b><code>RefreshBar()</code></b> - Starts the bars updating, allowing them to update and refresh their values, while triggering the cooldown coroutine that pauses the refreshing after a set amont of time (2s by default).</li>
+                                            <li><b><code>UpdateBar()</code></b> - Responsible for matching the bar's fillings with the current stats in a smooth way. This is the function that will be called each update while the Custombar is unpaused.</li>
+                                            <li><b><code>CheckForChanges()</code></b> - Unpauses bar by calling <code>RefreshBar()</code> when an interaction function is called.</li><br>
+                                        </ul>
+
+                                        <br><li><b>Initialization Functions</b> - Handles the inicialization of the bars, setting up its initial values and appearance.</li>
+                                        <ul>
+                                            <li><b><code>BuildTextIndicator()</code></b> - Intializes the text indicator components displayed within the bars.</li>
+                                            <li><b><code>BuildBarAppearance()</code></b> - Responsible for applying the customization options and values into the bar.</li>
+                                        </ul>
+
+                                      <br><li><b>Interaction Functions</b> - </li>
+                                        <ul>
+                                            <br>
+                                            <h6>(All CustomBars)</h6>
+                                            <li><b><code>SetMaxValue(float value)</code></b> - Sets the bar limit value (Ex: <code>SetMaxValue(100) </code>- the bar max value will be set to <b>100</b>).</li>
+                                            <li><b><code>Decrease(float value)</code></b> - Subtracts the specified amount to the current value of the bar. (Ex: <code>Decrease(5)</code> - if the current value of the bar is <b>100</b>, this function call will decrease it to <b>95</b>).</li>
+                                            <li><b><code>Increase(float value)</code></b> - Adds a specified amount to the current value of the bar. (Ex: <code>Increase(10)</code> - if the current value of the bar is <b>50</b>, this line of code will increase it to <b>60</b>.</li>
+                                            <li><b><code>SetCurrentValue(float value)</code></b> - Sets the current value of the bar directly. (Ex: <code>SetCurrentValue(0)</code> - the current value of the bar will be <b>0</b>.</li>
+                                            <li><b><code>SetBarText(string text)</code></b> - Sets texts components of the bar when available.</li>
+                                            
+                                            <br>
+                                            <h6>(CustomBar_A)</h6>
+                                            <p>Note: to show a value inside of the gauge indicator, the <code>Gauge Mode</code> variable within Inspector must be set to 1 or 2.</p>
+                                            <li><b><code>SetGaugeNum(float value)</code></b> - Directly sets the number shown in the gauge indicator (Can be used as a number counter or level indicator).</li>
+                                            <li><b><code>AddGaugeNum(float value)</code></b> - Adds the specified value to the current number of the gauge indicator.</li>
+                                            <li><b><code>SubtractGaugeNum(float value)</code></b> - Subtracts the specified value to the current number of the gauge indicator.</li>
+                                            <li><b><code>SetGaugeText(string value)</code></b> - Sets the gauge text, automatically switches the gauge to show text instead of numbers.</li>
+
+                                            <br>
+                                            <h6>(CustomBar_B)</h6>
+                                            <li><b><code>SetSecondTextValue(float value)</code></b> - Sets the  number shown in the second text indicator of the CustomBar_B - By default, the second text is disabled, and it can be enabled by ticking the <code>ShowSecondText</code> variable in the inspector with the CustomBar_B prefab focused on Hierarchy.</li>
+
+                                            
+                                            <br>
+                                            <h6>(CustomBar_C, CustomBar_D, CustomBar_D).</h6>
+                                            <li><b><code>SetMaxValue2(float value)</code></b> - Sets the second bar limit value when a second bar is available.</li>
+                                            <li><b><code>Decrease2(float value)</code></b> - Subtracts the specified amount to the current value of second the bar when there's a second bar.</li>
+                                            <li><b><code>Increase2(float value)</code></b> - Adds a specified amount to the current value of the second bar there's a second bar.</li>
+                                            <li><b><code>SetCurrentValue2(float value)</code></b> - Sets the current value of the second bar directly.</li>
+                                            <li><b><code>SetLvlValue(float value)</code></b> - Sets directly the value of the level indicator.</li>
+                                            <li><b><code>AddLvlValue(float value)</code></b> - Adds a number to the current value of the level indicator.</li>
+                                            <li><b><code>SubtractLvlValue(float value)</code></b> - Subtracts the current value of the level indicator to the specified number.</li>
+                                            <li><b><code>SetLvlString(string value)</code></b> - Sets the string of the level indicator, when <code>LvlStringMode</code> is turned on in Inspector.</li>
+                                            <li><b><code>ShowSecondaryBar(bool value)</code></b> - Show or hide the secondary bar (can be used as mana/shield/energy bar).</li>
+                                            <li><b><code>ShowTitle(bool value)</code></b> - Show or hide the text above the bar (mostly used as player or enemy name).</li>
+                                        </ul>
+                                    </ol>
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+                            
+
+                            <!-- REFERENCE CONTENT -->
+                            <section id="properties-section" class="doc-section">
+                                <h2 class="section-title">Properties Reference</h2>
+                                <br>
+                                <p> There are several options for customizing the bars looking and behavior, most of them can be done within the inspector.</p>
+
+                                <div id="step1"  class="section-block">
+                                    <h5> CustomBar_A</h5>
+                                    <img class="image reference-example" src="assets/images/custombar-a.png" alt="package-contents">
+                                </div><!--//section-block-->
+
+                                <div id="step1"  class="section-block">
+                                    <h5> CustomBar_B</h5>
+                                    <img class="image reference-example" src="assets/images/custombar-b.png" alt="package-contents">
+                                </div><!--//section-block-->
+
+                                <div id="step1"  class="section-block">
+                                    <h5> CustomBar_C</h5>
+                                    <img class="image reference-example" src="assets/images/custombar-c.png" alt="package-contents">
+                                </div><!--//section-block-->
+
+                                <div id="step1"  class="section-block">
+                                    <h5> CustomBar_D</h5>
+                                    <p>Except for the level indicator and level functions, <b>CustomBar_D</b> shares the same properties as <b>CustomBar_C</b>.</p>
+                                    <img class="image reference-example" src="assets/images/custombar-d.png" alt="package-contents">
+                                </div><!--//section-block-->
+
+                                <div id="step1"  class="section-block">
+                                    <h5> CustomBar_E</h5>
+                                    <img class="image reference-example" src="assets/images/custombar-e.png" alt="package-contents">
+                                </div><!--//section-block-->
+
+
+
+
+                            </section>
+ 
+
+                            <section id="diy-section" class="doc-section">
+                                <h2 class="section-title">DIY</h2>
+
+                                <div class="section-block">
+                                    <br>
+                                    <ol>
+                                        <li>
+                                            <p>All the visual elements can be customized, feel free to create your own sprites to and implement them, or edit the existing ones - for that I recommend you to make a copy of the sprite you want to edit, do whatever you want, then replace in the "Image" component within the script of the CustomBar you want to customize. After that, you can edit the PNG file in a editing software of your preference.  </p>
+
+                                            <img class="image diy1-example" src="assets/images/diy.png" alt="package-contents">
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <p>Edit as you wish, taking care only with maintaining the inner shape of the bar - where the indicators are shown - and keeping the colors in grayscales if you want to be able to edit the sprite color later in Inspector. It is not recommended to change the resolution of the sprite, doing so might result in messing the proportions of the bar when you replace the sprite back in Unity. This can be fixed easily just by editing the scale and position of the edited sprite.</p>
+                                            <img class="image diy2-example" src="assets/images/diy2.png" alt="package-contents">
+                                        </li>
+
+                                        <br>
+                                        <li>
+                                            <p>Save the image as png and head back to Unity, select the gameobject you want to edit, then replace the sprite withing the Image component. - or simply replace the chosen sprite when saving it, this should work instantly.</p>
+                                            <img class="image diy3-example" src="assets/images/diy3.png" alt="package-contents">
+                                        </li>
+
+                                        <br>
+                                        <li>
+                                            <p>If needed, change the scale and position of the new sprite using the scene to fit it properly. Adjust the color by using the Color Variables in the Inspector with the custombar focused in Hierarchy.</p>
+                                            <img class="image diy4-example" src="assets/images/diy4.png" alt="package-contents">
+                                        </li>
+ 
+ 
+                                    </ol>
+
+
+                                    <br>
+                                    <br>
+                                    <h5> Adding new elements:</h5> 
+                                    <p>New elements can be added to the CustomBar by creating new child gameobjects, adding an <b>Image Component</b> and creating a new <b>Sprite (2D and UI)</b> in the Project Window, then dragging it to sprite container of the new child gameobject's <b>Image Component</b>.</p>
+                                    <img class="image diy2-example" src="assets/images/diy5.png" alt="package-contents">
+
+                                    <ol>
+                                        <li><b>Create a GameObject</b> - Right-click in the Hierarchy window and select "Create Empty" or duplicate an existing one within the hierarchy of the CustomBar you want to add new stuff.</li>
+                                        <li><b>Add an Image Component</b> - Select the new GameObject, click "Add Component" in the Inspector window, search for "Image," and add the Image component - skip this step if you already duplicated a gameobject that has an Image component on it.</li>
+                                        <li><b>Create a new Sprite</b> - Import an image you want to use as sprite for your new element, make sure to set it as <code>Sprite (2D and UI)</code> by selecting it, and changing it's <b>Texture Type</b> in the Inspector, then applying the change.</li>
+                                        <li><b>Assign the sprite to the Image Component</b> - Drag the Sprite from the Project window onto the sprite container of the Image Component in the Inspector Window. (Be sure to drag the <b>sprite</b>, not the image itself - the sprite normally is under the image hierarchy</li>
+                                            <img class="image sprite-example" src="assets/images/sprite.png" alt="package-contents">
+                                        
+                                        <li><b>Adjust position and size</b> - Use the scene view position and scale controls to fit the new gameobject in the bar. To adjust the color, select the gameobject, and search for the <b>Color</b> variable inside of the <b>Image Component.</b></li>
+                                        <br>
+                                        <p>Some other changes might also be necessary depending on what customizations you'll try to implement. That being said, feel free to contact me at <a href="mail:contact@rayanaraujo.com.br">contact@rayanaraujo.com.br</a> if you have any doubts.</p>
+                                    </ol>
+                                    </div><!--//row-->
+                                </div><!--//section-block-->
+                            
+
+                            <section id="references-section" class="doc-section">
+                                <h2 class="section-title">References</h2>
+
+                                <div class="section-block">
+                                    <br>
+                                    <ol>
+                                        <li>
+                                            Unity Technologies. (2024). "Download and import an asset package" Unity Documentation. Retrieved from <a href="https://docs.unity3d.com/Manual/upm-ui-import.html">https://docs.unity3d.com/Manual/upm-ui-import.html</a>
+                                        </li>
+                                        <li>
+                                            Unity Technologies. (2024). "Importing local asset packages" Unity Documentation.  Retrieved from <a href="https://docs.unity3d.com/Manual/AssetPackagesImport.html">https://docs.unity3d.com/Manual/AssetPackagesImport.html</a>
+                                        </li>
+ 
+                                    </ol>
+                                    <br>
+                                    </div><!--//row-->
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                            </section><!--//doc-section-->
+                            
+
+
+                            <section id="contact-section" class="doc-section">
+                                <h2 class="section-title">Contact Information</h2>
+
+                                <div class="section-block">
+                                    <br>
+                                        <p>
+                                            For questions, comments, or suggestions regarding CustomBars, or this documentation, please feel free to contact me at <a href="mailto:contact@rayanaraujo.com.br">contact@rayanaraujo.com.br</a>
+                                        </p>
+
+                                    <br>
+                                    </div><!--//row-->
+                            </section><!--//doc-section-->
+
+                        </div><!--//content-inner-->
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- SIDEBAR -->
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+	                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+		                            <li class="nav-item">
+	                                    <a class="nav-link scrollto" href="#overview-section">Overview</a>
+		                            </li>
+
+
+		                            <li class="nav-item">
+	                                    <a class="nav-link scrollto" href="#Package-content-section">Package content</a>
+		                            </li>
+
+
+                                    <nav class="nav doc-sub-menu nav flex-column">
+
+
+                                    </nav><!--//nav-->
+                                    <li class="nav-item">
+	                                    <a class="nav-link scrollto" href="#installation-section">Installation</a>
+                                    </li>
+
+
+                                   <li class="nav-item">
+	                                     <a class="nav-link scrollto" href="#requirements-section">Requirements</a>
+                                    </li>
+
+
+                                    <li class="nav-item">
+	                                    <a class="nav-link scrollto" href="#workflows-section">Workflows</a>
+                                    </li>
+
+
+                                    <nav class="nav doc-sub-menu nav flex-column">
+
+
+                                      <li class="nav-item">
+                                        <a class="nav-link scrollto" href="#reference-example">Referencing</a>
+                                      </li>
+
+
+                                      <li class="nav-item">
+                                        <a class="nav-link scrollto" href="#action-event-example">Action Event</a>
+                                      </li>
+
+
+                                      <li class="nav-item">
+                                        <a class="nav-link scrollto" href="#secondary-step">Secondary step</a>
+                                      </li>
+                                    </nav>
+
+
+                                    <li class="nav-item">
+                                        <a class="nav-link scrollto" href="#advanced-section">Advanced </a>
+                                    </li>
+
+
+
+                                    <li class="nav-item">
+                                        <a class="nav-link scrollto" href="#properties-section">Properties Reference</a>
+                                    </li>
+
+
+
+                                    <li class="nav-item">
+                                        <a class="nav-link scrollto" href="#diy-section">DIY</a>
+                                    </li>
+
+
+                                    <li class="nav-item">
+                                        <a class="nav-link scrollto" href="#references-section">References</a>
+                                    </li>
+
+
+                                    <li class="nav-item">
+                                        <a class="nav-link scrollto" href="#contact-section">Contact Information</a>
+                                    </li>
+
+	                            </nav><!--//doc-menu-->
+	                        
+                        </div>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->              
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+        
+                               
+                                
+                            </div><!--//content-holder-inner-->
+                        </div><!--//content-holder-->
+                    </div><!--//row-->
+                </div><!--//promo-block-inner-->  
+            </div><!--//container-->
+        </div><!--//promo-block-->
+        
+    </div><!--//page-wrapper-->
+    
+    <footer id="footer" class="footer text-center">
+        <div class="container footer_container">
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">Thanks to </i><a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for designing this template developers</small>
+            
+        </div><!--//container-->
+    </footer><!--//footer-->
+    
+     
+    <!-- Main Javascript -->          
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/prism/prism.js"></script>      
+    <script src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>                                                          
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html> 
+

@@ -144,7 +144,8 @@
                                         To utilize CustomBars asset effectively, ensure that you meet the following basic requirements:
                                         <ul>
                                             <li><b>Unity Installation</b> - Unity Engine must be installed on your system. It is recomended to use the version <b>2022.3.13</b> or above, since it's the version that the asset was developed. Previous versions might work aswell, but CustomBars has not yet been tested in them yet. </li>
-                                            <li><b>Gameobject with Script</b> - To make usage of CustomBars, you'll need to have a project and a scene within it, and at least one gameobject and a C# script attached to it for interacting with the bars prefabs. Check the <a href="#workflow-section">Workflows section</a> for more information on how to incorporate custombars in your project.</li>
+                                            <li><b>Canvas gameobject</b> - Because it's a UI element, Custombars will only appear on screen if placed inside of a canvas gameobject in hierarchy. If you dont't have a Canvas gameobject yet, just right click on an empty space in hierarchy - or in the "<b>+</b>" button in the upper left corner of the hierarchy window > "<b>UI</b>" > "<b>Canvas</b>".</li>
+                                            <li><b>A gameobject with Script</b> - To be able to interact with CustomBars, you'll need to have a Unity Project with at least one gameobject with a C# script attached to it, and inside of the script you can make a reference of the bar you want to use, this way you'll be able to interact with the built-in functions of the bars. Check the <a href="#workflow-section">Workflows section</a> for more information on how to incorporate custombars in your project.</li>
                                         </ul>
                                     </p>
                                 </div>

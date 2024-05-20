@@ -63,7 +63,7 @@
                                 <div class="section-block">
                                     <p>CustomBars is a collection of customizable stats bars that includes seven unique variations for integration into your Unity project. Designed to streamline the process of implementing UI elements such as health bars, mana bars, and more, this package provides a convenient solution with 20 pre-built prefabs.<br>
                                     Each variation comes with a range of customizable elements, including colors, sprites, texts, and icons, allowing you to tailor the UI to your specific needs.<br>
-                                    CustomBars simplifies your game development process and enhance your user interface.<br>
+                                    CustomBars simplify your game development process and enhances your user interface.<br>
                                 </p>
                                 </div>
                             </section><!--//doc-section-->
@@ -128,7 +128,7 @@
                                               <li><b>Access the imported contents</b></li>
                                               <ul><li>The contents should be available inside of the "Asset" folder at the root of your project.</li></ul>
                                            </ol>
-                                           <p>After completing these steps, you should be able to utilize the CustomBars asset - or any other asset you may adquire later - in your project.</p>
+                                           <p>After completing these steps, you should be able to utilize the CustomBars asset - or any other asset you may acquire later - in your project.</p>
                                            <p>Note: you can also import packages manually, check on <a href="https://docs.unity3d.com/Manual/upm-ui-import.html#:~:text=Importing%20a%20complete%20project%20from%20the%20Asset%20Store,-A%20complete%20project&text=Choose%20Import%20if%20you're,to%20import%20and%20click%20Next." target="_blank">Unity docs</a> for more information</p>
                                         </div>
                                 </div><!--//section-block-->
@@ -143,8 +143,8 @@
                                     <p>
                                         To utilize CustomBars asset effectively, ensure that you meet the following basic requirements:
                                         <ul>
-                                            <li><b>Unity Installation</b> - Unity Engine must be installed on your system. It is recomended to use the version <b>2022.3.13</b> or above, since it's the version that the asset was developed. Previous versions might work aswell, but CustomBars has not yet been tested in them yet. </li>
-                                            <li><b>Canvas gameobject</b> - Because it's a UI element, Custombars will only appear on screen if placed inside of a canvas gameobject in hierarchy. If you dont't have a Canvas gameobject yet, just right click on an empty space in hierarchy - or in the "<b>+</b>" button in the upper left corner of the hierarchy window > "<b>UI</b>" > "<b>Canvas</b>".</li>
+                                            <li><b>Unity Installation</b> - Unity Engine must be installed on your system. It is recommended to use the version <b>2022.3.13</b> or above, since it's the version that the asset was developed. Previous versions might work aswell, but CustomBars has not yet been tested in them yet. </li>
+                                            <li><b>Canvas gameobject</b> - Because it's a UI element, Custombars will only appear on screen if placed inside of a canvas gameobject in hierarchy. If you don't have a Canvas gameobject yet, just right click on an empty space in hierarchy - or in the "<b>+</b>" button in the upper left corner of the hierarchy window > "<b>UI</b>" > "<b>Canvas</b>".</li>
                                             <li><b>A gameobject with Script</b> - To be able to interact with CustomBars, you'll need to have a Unity Project with at least one gameobject with a C# script attached to it, and inside of the script you can make a reference of the bar you want to use, this way you'll be able to interact with the built-in functions of the bars. Check the <a href="#workflow-section">Workflows section</a> for more information on how to incorporate custombars in your project.</li>
                                         </ul>
                                     </p>
@@ -295,7 +295,7 @@ public class Implementation_Test2 : MonoBehaviour
 
                                           <i>The Custombar script needs to know what to do when each of the Action Events gets triggered.</i><br>
                                         <li>
-                                          <b>Reference the Action Event script</b> -  inside of the chosen CustomBar script, add a reference of the script containing the Action Event you've setted up.
+                                          <b>Reference the Action Event script</b> -  inside of the chosen CustomBar script, add a reference of the script containing the Action Event you've set up.
                                         </li><br>
                                           <i>We want each of the Action Events to trigger a function. In case the Action Events is carrying an argument, the function must also support an argument of the same type (Ex: if the event in the Action Event Script is sending a float, then inside of the Custombar Script we need to subscribe it to a function that also receives a float as argument).</i><br>
                                         <li>

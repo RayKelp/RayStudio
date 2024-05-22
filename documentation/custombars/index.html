@@ -63,7 +63,7 @@
                                 <div class="section-block">
                                     <p>CustomBars is a collection of customizable stats bars that includes seven unique variations for integration into your Unity project. Designed to streamline the process of implementing UI elements such as health bars, mana bars, and more, this package provides a convenient solution with 20 pre-built prefabs.<br>
                                     Each variation comes with a range of customizable elements, including colors, sprites, texts, and icons, allowing you to tailor the UI to your specific needs.<br>
-                                    CustomBars simplifies your game development process and enhance your user interface.<br>
+                                    CustomBars simplify your game development process and enhances your user interface.<br>
                                 </p>
                                 </div>
                             </section><!--//doc-section-->
@@ -128,7 +128,7 @@
                                               <li><b>Access the imported contents</b></li>
                                               <ul><li>The contents should be available inside of the "Asset" folder at the root of your project.</li></ul>
                                            </ol>
-                                           <p>After completing these steps, you should be able to utilize the CustomBars asset - or any other asset you may adquire later - in your project.</p>
+                                           <p>After completing these steps, you should be able to utilize the CustomBars asset - or any other asset you may acquire later - in your project.</p>
                                            <p>Note: you can also import packages manually, check on <a href="https://docs.unity3d.com/Manual/upm-ui-import.html#:~:text=Importing%20a%20complete%20project%20from%20the%20Asset%20Store,-A%20complete%20project&text=Choose%20Import%20if%20you're,to%20import%20and%20click%20Next." target="_blank">Unity docs</a> for more information</p>
                                         </div>
                                 </div><!--//section-block-->
@@ -140,11 +140,11 @@
                                 <h2 class="section-title">Requirements</h2>
                                 <div class="section-block">
                                     <p>
-                                        To utilize CustomBars asset effectively, ensure that you meet the following basic requirements:
+                                        To utilize CustomBars asset properly, ensure that you meet the following basic requirements:
                                         <ul>
-                                            <li><b>Unity Installation</b> - Unity Engine must be installed on your system. It is recomended to use the version <b>2022.3.13</b> or above, since it's the version that the asset was developed. Previous versions might work aswell, but CustomBars has not yet been tested in them yet. </li>
-                                            <li><b>Canvas gameobject</b> - Because it's a UI element, Custombars will only appear on screen if placed inside of a canvas gameobject in hierarchy. If you dont't have a Canvas gameobject yet, just right click on an empty space in hierarchy - or in the "<b>+</b>" button in the upper left corner of the hierarchy window > "<b>UI</b>" > "<b>Canvas</b>".</li>
-                                            <li><b>A gameobject with Script</b> - To be able to interact with CustomBars, you'll need to have a Unity Project with at least one gameobject with a C# script attached to it, and inside of the script you can make a reference of the bar you want to use, this way you'll be able to interact with the built-in functions of the bars. Check the <a href="#workflow-section">Workflows section</a> for more information on how to incorporate custombars in your project.</li>
+                                            <li><b>Unity Installation</b> - Unity Engine must be installed on your system. It is recommended to use the version <b>2022.3.13</b> or above, since it's the version that the asset was developed. Previous versions might work aswell, but CustomBars has not yet been tested in them yet. </li>
+                                            <li><b>Canvas gameobject</b> - Because it's a UI element, Custombars will only appear on screen if placed inside of a canvas gameobject in hierarchy. If you don't have a Canvas gameobject yet, just right click on an empty space in hierarchy - or in the "<b>+</b>" button in the upper left corner of the hierarchy window > "<b>UI</b>" > "<b>Canvas</b>".</li>
+                                            <li><b>A gameobject with Script</b> - To be able to interact with CustomBars, you'll need to have a Unity Project with at least one gameobject with a C# script attached to it. Inside of the script you can make a reference of the bar you want to use, this way you'll be able to interact with the built-in functions of the bars. Check the <a href="#workflow-section">Workflows section</a> for more information on how to incorporate custombars in your project.</li>
                                         </ul>
                                     </p>
                                 </div>
@@ -328,7 +328,7 @@ public class Implementation_Test2 : MonoBehaviour
 
                                           <i>The Custombar script needs to know what to do when each of the Action Events gets triggered.</i><br>
                                         <li>
-                                          <b>Reference the Action Event script</b> -  inside of the chosen CustomBar script, add a reference of the script containing the Action Event you've setted up.
+                                          <b>Reference the Action Event script</b> -  inside of the chosen CustomBar script, add a reference of the script containing the Action Event you've set up.
                                         </li><br>
                                           <i>We want each of the Action Events to trigger a function. In case the Action Events is carrying an argument, the function must also support an argument of the same type (Ex: if the event in the Action Event Script is sending a float, then inside of the Custombar Script we need to subscribe it to a function that also receives a float as argument).</i><br>
                                         <li>
@@ -386,7 +386,7 @@ public class Implementation_Test2 : MonoBehaviour
                             <section id="advanced-section" class="doc-section">
                                 <h2 class="section-title">Advanced</h2>
                                 <div class="section-block">
-                                    <h6>Custombar scripts funcionality</h6>
+                                    <h6>Custombar scripts functionality</h6>
                                     <p>The code of each script of Custombar is organized into four main sections of functions, for ease of understanding. Each of the 7 variations might have their own differences like extra functions and variables, but they still follow the same structure:</p>
                                     <ol>
 
@@ -514,7 +514,7 @@ public class Implementation_Test2 : MonoBehaviour
 
                                         <br>
                                         <li>
-                                            <p>If needed, change the scale and position of the new sprite using the scene to fit it properly. Adjust the color by using the Color Variables in the Inspector with the custombar focused in Hierarchy.</p>
+                                            <p>If necessary, change the scale and position of the new sprite using the scene to fit it properly. Adjust the color by using the Color Variables in the Inspector with the custombar focused in Hierarchy.</p>
                                             <img class="image diy4-example" src="assets/images/diy4.png" alt="package-contents">
                                         </li>
  
@@ -532,7 +532,7 @@ public class Implementation_Test2 : MonoBehaviour
                                         <li><b>Create a GameObject</b> - Right-click in the Hierarchy window and select "Create Empty" or duplicate an existing one within the hierarchy of the CustomBar you want to add new stuff.</li>
                                         <li><b>Add an Image Component</b> - Select the new GameObject, click "Add Component" in the Inspector window, search for "Image," and add the Image component - skip this step if you already duplicated a gameobject that has an Image component on it.</li>
                                         <li><b>Create a new Sprite</b> - Import an image you want to use as sprite for your new element, make sure to set it as <code>Sprite (2D and UI)</code> by selecting it, and changing it's <b>Texture Type</b> in the Inspector, then applying the change.</li>
-                                        <li><b>Assign the sprite to the Image Component</b> - Drag the Sprite from the Project window onto the sprite container of the Image Component in the Inspector Window. (Be sure to drag the <b>sprite</b>, not the image itself - the sprite normally is under the image hierarchy</li>
+                                        <li><b>Assign the sprite to the Image Component</b> - Drag the Sprite from the Project window onto the sprite container of the Image Component in the Inspector Window. (Be sure to drag the <b>sprite</b>, not the image itself - the sprite is usually under the image hierarchy</li>
                                             <img class="image sprite-example" src="assets/images/sprite.png" alt="package-contents">
                                         
                                         <li><b>Adjust position and size</b> - Use the scene view position and scale controls to fit the new gameobject in the bar. To adjust the color, select the gameobject, and search for the <b>Color</b> variable inside of the <b>Image Component.</b></li>
@@ -569,7 +569,7 @@ public class Implementation_Test2 : MonoBehaviour
                                 <div class="section-block">
                                     <br>
                                         <p>
-                                            If you have any questions, comments, bur reports, or suggestions regarding CustomBars, please feel free to contact me at <a href="mailto:contact@rayanaraujo.com.br">contact@rayanaraujo.com.br</a>
+                                            If you have any questions, comments, bug reports, or suggestions regarding CustomBars, please feel free to contact me at <a href="mailto:contact@rayanaraujo.com.br">contact@rayanaraujo.com.br</a>
                                         </p>
 
                                     <br>
@@ -582,7 +582,7 @@ public class Implementation_Test2 : MonoBehaviour
                                 <div class="section-block">
                                     <br>
                                         <p>
-                                            Thanks for adquiring Custombars!<br>
+                                            Thanks for acquiring Custombars!<br>
                                             If possible, please review this asset in Asset Store, your feedback is important, this way I can keep improving this package and adding new stuff in upcoming updates.
                                         </p>
 
